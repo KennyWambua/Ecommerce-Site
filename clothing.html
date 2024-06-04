@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CLOTHING  | APEX STORE </title>
+    <link rel="stylesheet" href="css/clothing.css">
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="js/jQuery3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/dad03e859c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+        function load(url) {
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true); 
+            req.onreadystatechange = function () {
+                if (req.readyState === 4 && req.status === 200) {
+                    document.getElementById("1").innerHTML = req.responseText;
+                }
+            };
+            req.send(null);
+        }
+
+        load("header.html");
+    </script>
+    <!-- CONTENT SECTION -->
+    <div id="containerClothing"></div>
+
+</body>
+
+<!-- content JS -->
+<script src="clothing.js"></script>
+
+</html>
