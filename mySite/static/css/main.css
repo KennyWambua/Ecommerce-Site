@@ -1,0 +1,154 @@
+body { 
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    background-color: white;
+}
+.active{
+    color: rgba(23, 104, 225, 0.841);
+    transition: .5s ease;
+}
+#container {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 8px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#shopName {
+    font-size: 38px;
+}
+
+#shopName b {
+    font-weight: 900;
+}
+
+#collection .nav-link {
+    font-weight: bold;
+}
+
+.search {
+    color: rgb(29, 29, 29);
+    text-align: center;
+}
+#search-form button{
+    /* background-color: rgb(255, 30, 30); */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+.addedToCart {
+    font-size: 1.5em;
+    position: relative;
+}
+
+#badge {
+    position: absolute;
+    background-color: rgb(255, 30, 30);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 14px;
+    top: -5px;
+    right: 10px;
+}
+
+.userIcon {
+    font-size: 45px;
+}
+
+#input {
+    width: auto;
+    height: 3em;
+    padding: 2px 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+
+#input::placeholder {
+    font-weight: bold;
+}
+
+#input:focus {
+    outline: none;
+}
+/* Flash Message */
+.error-message {
+    color: red;
+    list-style-type: none;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flashes li {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.flashes .danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Media Queries */
+@media (max-width: 920px) {
+    #shopName {
+        font-size: 28px;
+    }
+
+    #collection .nav-link {
+        font-size: 12px;
+    }
+
+    .userIcon {
+        font-size: 35px;
+    }
+
+    .addedToCart {
+        font-size: 1.2em;
+        margin: 10px 20px;
+    }
+
+    #badge {
+        right: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    #shopName {
+        font-size: 24px;
+    }
+
+    #collection .nav-link {
+        font-size: 10px;
+    }
+
+    .userIcon {
+        font-size: 30px;
+    }
+
+    #container {
+        padding: 20px 25px;
+    }
+
+    #badge {
+        right: 62px;
+        top: 18px;
+    }
+}

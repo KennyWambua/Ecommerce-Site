@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Search Results | Kay Store {% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="/static/css/home.css"> <!-- Include home.css for styling -->
+    {% endblock %}
+    {% block content %}
+    <div class="searchContainer">
+        <h1>Search Results</h1>
+        <div id="containerClothing" class="search-results"> <!-- Use the same container ID -->
+            <!-- Search results will be inserted here dynamically -->
+        </div>
+    </div>
+    <script src="/static/js/search.js" ></script>
+{% endblock %}

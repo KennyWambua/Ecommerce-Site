@@ -1,0 +1,192 @@
+body{
+    height: 100%;
+}
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content
+{
+    flex-grow: 1;
+}
+#cartMainContainer
+{
+    padding: 90px 50px;
+    margin-top: 30px;
+}
+#cartMainContainer h1
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#cartContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+img
+{
+    width: 80px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+#boxContainer
+{
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+#box
+{
+    background-color: white;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 10px;
+}
+#box:hover
+{
+    box-shadow: 0px 1px 3px 2px rgb(185, 185, 185);
+}
+#totalContainer
+{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+}
+#totalContainer:hover
+{
+    box-shadow: 0px 1px 3px 2px rgb(185, 185, 185);
+}
+#button button
+{
+    padding: 8px 12px;
+    background-color: rgb(3, 122, 122);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button a
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+button:hover
+{
+    background-color: rgb(3, 94, 94);
+    outline: none;
+    font-weight: 600;
+}
+button a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+#orderFormContainer {
+    width: 90%;
+    margin: 150px auto 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+}
+
+#orderForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#orderForm label {
+    margin: 10px 0 5px;
+}
+.close-button {
+    background-color: rgb(3, 122, 122);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px; 
+}
+#removeButton {
+    background-color: rgb(3, 122, 122);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 15px;
+    margin-right: 20px; 
+    border-radius: 10px;
+}
+#orderForm input,
+#orderForm textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#orderForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(3, 122, 122);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#orderForm button:hover {
+    background-color: #028a8a;
+}
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 800px)
+{
+    img
+    {
+        width: 60px;
+        margin-right: 20px;
+    }
+    h3, h4
+    {
+        font-size: 14px;
+    }
+    h2
+    {
+        font-size: 18px;
+    }
+    #cartMainContainer
+    {
+        padding: 90px 20px;
+    }
+}
+@media(max-width: 555px)
+{
+    #cartContainer
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+    #boxContainer
+    {
+        padding: 20px;
+        width: 80%;
+    }
+}

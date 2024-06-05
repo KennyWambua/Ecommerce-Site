@@ -1,0 +1,52 @@
+{% extends "base.html"%}
+{% block title%} Order Placed | Kay Store {% endblock%}
+{% block head%}
+    {{ super() }}
+    <link rel="stylesheet" href="/static/css/orderPlaced.css">
+{% endblock %}
+{% block content %}  
+<!-- OREDER PLACED -->
+<section>
+    <div id="orderContainer">
+        <div id="check"><i class="fas fa-check-circle"></i></div>
+        
+        <div id="aboutCheck">
+            <h1> Order Placed Successfully! </h1>
+            <p> We've sent you an email with the Order details. </p>
+            <p> Thank you for shopping with us! </p>
+            <button class="continueBtn"> <a href="{{url_for('main.home')}}"> Continue Shopping </a> </button>
+        </div>
+    </div>
+</section>
+            <!-- FOOTER -->
+<footer>
+    <div id="containerFooter">
+        <div id="webFooter">
+            <h3> <strong> Online store </strong> </h3>
+            <p> <a href="{{url_for('main.clothing')}}"> Clothing items </a></p>
+            <p> <a href="{{url_for('main.accessories')}}"> Accessories deals </a></p>
+        </div>
+        <div id="webFooter">
+            <h3> <strong> Helpful Link</strong>  </h3>
+            <p> <a href="{{url_for('main.cart')}}"> View cart </a></p>
+            <p> <a href="{{url_for('main.accessories')}}"> Featured goods </a></p>
+        </div>
+        <div id="webFooter">
+            <h3><strong> Follow Us</strong> </h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div id="webFooter">
+            <h3> <strong> Address </strong> </h3>
+            <p> building 101 </p>
+            <p> central avenue </p>
+            <p> la - 902722 </p>
+            <p> Australia </p>
+        </div>
+    </div>
+</footer>
+<script src="/static/js/orderPlaced.js"></script>
+{% endblock %}
