@@ -68,16 +68,28 @@
     </header>
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-            <ul class="flashes">
-            {% for category, message in messages %}
-              <li class="{{ category }}">{{ message }}</li>
-            {% endfor %}
-            </ul>
+            <div class="flashes">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div> 
         {% endif %}
     {% endwith %}
     <div class="content">
         {% block content %} {% endblock %}
     </div>
     <script src="/static/js/search.js" ></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                var alerts = document.querySelectorAll('.alert');
+                alerts.forEach(function(alert) {
+                    alert.style.display = 'none';
+                });
+            }, 5000); // 5 seconds
+        });
+    </script>
 </body>
 </html>
