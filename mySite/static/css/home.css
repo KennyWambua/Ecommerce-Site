@@ -1,7 +1,7 @@
 /* Slider Section */
 #containerSlider { 
     margin: auto;
-    width: 95%;
+    width: 100%;
     text-align: center;
     padding-top: 100px;
     box-sizing: border-box;
@@ -16,6 +16,9 @@
 /* Home content section*/
 #homeContent{
     margin: 20px auto;
+}
+#homeContent h2{
+    margin-left: 40px;
 }
 #homeContent h1{
     width: 90%;
