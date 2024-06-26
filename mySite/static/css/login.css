@@ -57,11 +57,13 @@ body {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+
 }
 
 .actions button:hover {
     background-color: #1748a0;
+    transform: scaleX(1.05);    
 }
 
 .links {

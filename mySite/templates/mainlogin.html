@@ -8,24 +8,16 @@
 {% endblock %}
 {% block content %}
 <div class="login-container">
-    <div class="overlay"
     <form class="login-form" action="/login" method="POST">
         <h3> <strong> Sign in to KayStore </strong></h3>
-        <div class="logo">
-            <img src="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" alt="KayStore">
-        </div>
-            <div class="input-group">
+        <div class="input-group">
             <input type="email" placeholder="Email"  id="email" name="email" required>
         </div>
         <div class="input-group">
             <input type="password" placeholder="Password"  id="password" name="password" required>
         </div>
-        <button type="submit"> Sign in </button>
         <div class="actions">
-            <div>
-                <input type="checkbox" id="Keep-loggen-in" name="keep-logged-in">
-                <label for="Keep-logged-in">Keep me logged in</label>
-
+            <button type="submit"> Sign in </button>
         </div>
         <div class="links">
             <a href="/register">Don't have an account? </br>
