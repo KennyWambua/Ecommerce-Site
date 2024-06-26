@@ -26,11 +26,7 @@ body {
     color: #333;
     text-align: center;
 }
-.logo img{
-    width: 80px;
-    margin: 0 auto;
-    display: block;
-}
+
 .input-group {
     margin-bottom: 15px;
 }
@@ -43,31 +39,31 @@ body {
 
 .input-group input {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
 }
-.input-group input:focus {
-    outline-color: rgba(23, 104, 225, 0.841);
+
+.actions {
+    text-align: center;
 }
-.loginBtn {
+
+.actions button {
     background-color: rgba(23, 104, 225, 0.841);
     color: white;
     border: none;
-    width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    margin-top: 15px;
 
 }
 
-.loginBtn:hover {
+.actions button:hover {
     background-color: #1748a0;
-    transform: scaleX(1.01);    
+    transform: scaleX(1.05);    
 }
 
 .links {
